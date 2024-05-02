@@ -1,0 +1,402 @@
+<!-- The doctype declaration for HTML5 -->
+<!DOCTYPE html>
+<!-- Language declaration for accessibility and search engine optimization -->
+<html lang="en">
+<!-- The head section contains meta tags, links to stylesheets, and the document title -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS for styling and layout -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css"
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Linking Custom CSS stylesheet for this HTML Page -->
+  <link rel="stylesheet" href="history-styles.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>History of Hyperlinks</title>
+</head>
+<!-- The body contains all the content and scripts -->
+<body>
+  <!-- Responsive navigation bar from Bootstrap with collapsing functionality on smaller screens -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Hyperlinks</a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="histoy.html">History <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="cv.html">About the Author</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Main content container -->
+  <div class="main">
+    <h4>The Evolution of the Hyperlink: A Timeline</h4>
+    <div class="timeline-intro">
+      This interactive timeline showcases the history of hyperlinks, from their early conception to the web we know
+      today. <b>Slide left</b> and <b>Click on each event</b> to learn more about them!
+    </div>
+    <!-- Timeline container which scrolls to right and on clicking on a timeline card, more information and media about the particular timeline card pops up on a modal -->
+    <div class="timeline-container">
+      <section class="timeline">
+        <ol>
+          <li>
+            <!-- Timeline cards -->
+            <div class="timeline-card">
+              <time>1945</time>
+              <h5>Vannevar Bush publishes an essay</h5>
+              <p>Vannevar Bush publishes the essay "As We May Think" describing the Memex, a microfilm-based machine for
+                linking information.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-card">
+              <time>1963</time>
+              <h5>Ted Nelson coins the term "link"</h5>
+              <p>Ted Nelson coins the term "link" while working on Project Xanadu, inspired by Bush's Memex concept.
+                Xanadu aims to create a worldwide computer network with hyperlinks.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-card">
+              <time>1968</time>
+              <h5>Expansion of Hyperlinks</h5>
+              <p>Engelbart's team expands hyperlinks to connect paragraphs between separate documents in NLS.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-card">
+              <time>1987</time>
+              <h5>HyperCard for Apple Macintosh</h5>
+              <p>HyperCard allows hyperlinking within documents and between documents/applications.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-card">
+              <time>1989</time>
+              <h5>The World Wide Web</h5>
+              <p>Tim Berners-Lee invents the World Wide Web, a global system of interconnected hypertext documents.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-card">
+              <time>1991</time>
+              <h5>The Gopher Protocol</h5>
+              <p>The Gopher protocol becomes the first widely used open protocol for hyperlinking between internet
+                sites.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-card">
+              <time>1992</time>
+              <h5>Release of Lynx Web Browser</h5>
+              <p>The Lynx web browser is released, allowing users to navigate the World Wide Web and access hyperlinks
+                across the internet.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-card">
+              <time>1993</time>
+              <h5>Release of Mosaic Web Browser</h5>
+              <p>Mosaic web browser handles both Gopher and HTML links. HTML's ability to combine graphics, text, and
+                hyperlinks surpasses Gopher's text-based menu structure.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-card">
+              <time>1995</time>
+              <h5>HTML Standardization</h5>
+              <p>The World Wide Web Consortium (W3C) establishes HTML (HyperText Markup Language) as the standard language for creating web pages, including defining hyperlink syntax.</p>
+            </div>
+          </li>
+          <li>
+            <div class="timeline-card">
+              <span class="time-period" title="Mid 1990s to now">Mid 1990s-Present</span>
+              <h5>Search Engines & Dynamic Content</h5>
+              <p>Search engines like AltaVista helped navigate the web's explosion. Later, technologies like AJAX enabled dynamic content, further expanding hyperlinks' potential. Today, hyperlinks remain the web's cornerstone, evolving with new trends.</p>
+            </div>            
+          <li></li>
+        </ol>
+        <!-- Modals for additional information implemented with Bootstap and styled using custom CSS -->
+        <div class="modal" id="myModal1">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">As We May Think</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="content">
+                  <p>Famous American engineer Vannevar Bush wrote a groundbreaking article titled "As We May Think" in 1945. This essay proposed the Memex, a ground-breaking gadget. Memex was created to store and retrieve data from microfilm. However, what really set it apart was its capacity to associate information, much like hyperlinks do on the internet today. Even though microfilm technology was restricted, the Memex paved the way for future information management systems.</p>
+                  <div class="image-container">
+                    <img class="vb" src="./Images/Vannevar_Bush.jpg" alt="Vannevar Bush" />
+                    <p>Vannevar Bush</p>
+                  </div>
+                </div>
+              </div>              
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="myModal2">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Project Xanadu</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <figure>
+                  <img src="./Images/X1.jpg" alt="xanadu" id="xan1" />
+                  <img src="./Images/x2.png" alt="xanadu" id="xan2" />
+                  <figcaption>Early mockup of Xanadu which shows the interconnection between two screen windows
+                  </figcaption>
+                </figure>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="myModal3">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Doug Engelbart's Mother of All Demos</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>In a groundbreaking 1968 demonstration, Douglas Engelbart introduced a system called NLS that featured two innovations ahead of their time: the world's first computer mouse for navigating on-screen, and a precursor to today's hyperlinks, allowing users to jump between connected points within the system.</p>
+                <iframe id="doug-video" width="560" height="200"
+                  src="https://www.youtube.com/embed/UhpTiWyVa6k?si=MkkWtKuuKfI8xX1N&amp;start=941"
+                  title="YouTube video player"
+                  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                  referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="myModal4">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Hypercard</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div>
+                  <p>Watch this walkthrough video of HyperCard to see how it simplified the creation of interactive documents on the Macintosh.</p>
+                  <iframe width="560" height="315" src="https://www.youtube.com/embed/hbIDvUqoA1E?si=cjXflIhk3Zpdmevo"
+                    title="YouTube video player" 
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                    referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="myModal5">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">The World's first Website</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="fact">
+                <h6>Did you know?</h6>
+                <p>The first website at CERN – and in the world – was dedicated to the World Wide Web project itself and was hosted on Berners-Lee's NeXT computer.</p>
+                <p>Although, the first website was also lost from the web! Much of old web pages were stored in floppy disks and copies were limited. However, CERN has restored it and it is now available online.</p>
+                <span><b><i>Click on the link to access the first ever web page in the world:</i></b>
+                  <a href="https://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank"
+                    rel="noopener noreferrer">World Wide Web</a></span>
+                  </div>
+                <div class="w3image">
+                  <img src="./Images/w3.png" alt="World Wide Web">
+                  <p><b>Screenshot of recreated page of first website</b></p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="myModal6">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Gopher</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <div class="fact">
+                  <h6>Did you know?</h6>
+                  <p>In 1991, just a year after the Gopher Protocol was created, it accounted for 95% of the traffic on the internet. Its simplicity made it more accessible than the complex WWW system that would soon eclipse it.</p>
+                </div>
+                <div class="gopher-image">
+                  <p>
+                    Imagine navigating the internet through text-based menus, where every choice takes you deeper into
+                    the web of knowledge – that was the Gopher experience. <b>Below is the screenshot of the Gopher
+                    interface:</b>
+                  </p>
+                  <img src="./Images/gopher.jpg" alt="Gopher Inerface">
+
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="myModal7">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Lynx Web Browser</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Lynx is a customizable text-based web browser for use on cursor-addressable character cell terminals. As of 2024, it is the oldest web browser still being maintained, having started in 1992. Text-only surfing offers speed advantages that are especially noticeable on low-bandwidth internet connections. In Lynx, you can browse by either using the cursor keys to highlight the selected link or by having all the links on a page numbered and inputting the link's number. Many HTML features and SSL are supported in the current versions. While frames are identifiable by name and can be viewed as individual pages, tables are constructed using spaces. Although Lynx can't display all non-textual stuff on the web, like video and images, it can launch other applications that do, such an image viewer or a video player.
+                  A drawback of Lynx is that it does not support JavaScript, which many websites need to function properly, in contrast to the majority of web browsers. 
+                </p>
+                <p><b>Below is the screenshot of the interface of the Lynx Web Browser.</b></p>
+                <img src="./Images/lynx.jpg" alt="lynx Web Browser">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="myModal8">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Mosaic Web Browser</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>Mosaic was the first web browser to feature a graphical user interface that allowed images to be displayed inline with text on web pages, rather than in separate windows. Its release in 1993 by the National Center for Supercomputing Applications (NCSA) marked a significant leap forward in web technology and usability, paving the way for the browsers that followed and the explosive growth of the internet in the mid-1990s.
+                </p>
+                <p><b>Below is the screenshot of the interface of the Mosaic Web Browser.</b></p>
+                <img src="./Images/mosaic.jpg" alt="Mosaic Web Browser">
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="myModal9">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">HTML Standardization</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>The World Wide Web Consortium (W3C), a global organization that works to define web standards, is in charge of managing HTML standardization. The goal is to secure the web's continuous expansion. The open web as it exists now would be far more chaotic and fragmented without the standardization efforts of groups like the W3C.
+                </p>
+                <p>Key benefits:</p>
+                <ul>
+                  <li>Consistency Across Web Browsers: It guarantees that websites function consistently on various devices and browsers. Developers can save time and resources by not having to produce separate versions of the same website for different browsers.</li>
+                  <li>Accessibility: Web material is more useable for individuals with disabilities when it adheres to accessibility criteria, which is supported by standard HTML. Inclusion is necessary to have a fair and accessible internet.</li>
+                  <li>Maintenance Ease: Updating and maintaining a uniform codebase is simpler. Consistent code methods allow developers to optimize and fix web pages more quickly.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="modal" id="myModal10">
+          <div class="modal-dialog modal-lg">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title">Search Engines & Dynamic Content</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+              </div>
+              <div class="modal-body">
+                <p>The mid-1990s witnessed two key developments that transformed how we navigate the web:</p>
+                <ul>
+                  <li>Search Engines: Search giants like AltaVista and Yahoo! emerged, making it easier to discover the vast amount of information connected by hyperlinks. This increased user engagement.</li>
+                  <li>Dynamic Content and AJAX: By the late 1990s and early 2000s, technologies like server-side scripting and AJAX allowed webpages to update content without full page reloads. Clicking a hyperlink could now trigger dynamic changes, making the web more interactive and engaging.</li>
+                </ul>
+                <p><b>Today and Beyond:</b></p>
+                <p>Hyperlinks remain the cornerstone of web navigation in 2024.  As new technologies like single-page applications and touch-based interfaces emerge, hyperlinks continue to evolve, ensuring their place in shaping the future of the web.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+    </div>
+  </div>
+  <div class="references">
+    <h4>References</h4>
+    <ol>
+      <li>“HTML | Links.” 2017. GeeksforGeeks. December 8, 2017. <a href="https://www.geeksforgeeks.org/html-links/" target="_blank" rel="noopener noreferrer">https://www.geeksforgeeks.org/html-links/</a>.</li>
+      <li>“HTML Anchor.” n.d. Www.w3schools.in. Accessed April 15, 2024. <a href="https://www.w3schools.in/html/anchor" target="_blank" rel="noopener noreferrer">https://www.w3schools.in/html/anchor</a>.</li>
+      <li>“JavaScript Events.” 2019. W3schools.com. 2019. <a href="https://www.w3schools.com/js/js_events.asp" target="_blank" rel="noopener noreferrer">https://www.w3schools.com/js/js_events.asp</a>.</li>
+      <li>JavaScript-World. 2023. “Mastering AJAX in JavaScript: A Beginner’s Guide with Examples.” Medium. May 8, 2023. <a href="https://medium.com/@JavaScript-World/mastering-ajax-in-javascript-a-beginners-guide-with-examples-6111aa53e690" target="_blank" rel="noopener noreferrer">https://medium.com/@JavaScript-World/mastering-ajax-in-javascript-a-beginners-guide-with-examples-6111aa53e690</a>.</li>
+      <li>“JQuery Examples.” n.d. Www.w3schools.com. <a href="https://www.w3schools.com/jquery/jquery_examples.asp" target="_blank" rel="noopener noreferrer">https://www.w3schools.com/jquery/jquery_examples.asp</a>.</li>
+      <li>“JQuery Examples.” n.d. GeeksforGeeks. Accessed April 15, 2024. <a href="https://www.geeksforgeeks.org/jquery-examples/" target="_blank" rel="noopener noreferrer">https://www.geeksforgeeks.org/jquery-examples/</a>.</li>
+      <li>“Learn AJAX Tutorial - Javatpoint.” n.d. Www.javatpoint.com. <a href="https://www.javatpoint.com/ajax-tutorial" target="_blank" rel="noopener noreferrer">https://www.javatpoint.com/ajax-tutorial</a>.</li>
+      <li>“Math.random() - JavaScript | MDN.” n.d. Developer.mozilla.org. <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random" target="_blank" rel="noopener noreferrer">https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random</a>.</li>
+      <li>“Public APIs.” 2022. GitHub. September 14, 2022. <a href="https://github.com/public-apis/public-apis" target="_blank" rel="noopener noreferrer">https://github.com/public-apis/public-apis</a>.</li>
+      <li>“The Three Parts of a Hyperlink – SweenDawg.” 2016. April 29, 2016. <a href="http://sweendawg.com/the-three-parts-of-a-hyperlink/" target="_blank" rel="noopener noreferrer">http://sweendawg.com/the-three-parts-of-a-hyperlink/</a>.</li>
+      <li>W3Schools. 2019. “AJAX Introduction.” W3schools.com. 2019. <a href="https://www.w3schools.com/xml/ajax_intro.asp" target="_blank" rel="noopener noreferrer">https://www.w3schools.com/xml/ajax_intro.asp</a>.</li>
+      <li>“What Is a Hyperlink?” n.d. IONOS Digitalguide. <a href="https://www.ionos.com/digitalguide/websites/web-development/hyperlink-definition-and-examples-of-use/" target="_blank" rel="noopener noreferrer">https://www.ionos.com/digitalguide/websites/web-development/hyperlink-definition-and-examples-of-use/</a>.</li>
+      <li>“1968 ‘Mother of All Demos’ with Doug Engelbart & Team (1/3) [Re-Mastered].” n.d. Www.youtube.com. Accessed April 15, 2024. <a href="https://youtu.be/UhpTiWyVa6k" target="_blank" rel="noopener noreferrer">https://youtu.be/UhpTiWyVa6k</a>.</li>
+      <li>“A Brief History of Hypertext.” 1991. The History of the Web. October 1, 1991. <a href="https://thehistoryoftheweb.com/brief-history-hypertext/" target="_blank" rel="noopener noreferrer">https://thehistoryoftheweb.com/brief-history-hypertext/</a>.</li>
+      <li>“As We May Think.” 2019. Wikipedia. August 11, 2019. <a href="https://en.wikipedia.org/wiki/As_We_May_Think" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/As_We_May_Think</a>.</li>
+      <li>CERN. n.d. “The Birth of the Web | CERN.” Home.web.cern.ch. <a href="https://home.web.cern.ch/science/computing/birth-web" target="_blank" rel="noopener noreferrer">https://home.web.cern.ch/science/computing/birth-web</a>.</li>
+      <li>“Firsts: Hyperlinked - Doug Engelbart Institute.” n.d. Dougengelbart.org. <a href="https://dougengelbart.org/content/view/158/" target="_blank" rel="noopener noreferrer">https://dougengelbart.org/content/view/158/</a>.</li>
+      <li>Fischels, Josie. 2021. “A Look Back at the Very First Website Ever Launched, 30 Years Later.” NPR.org. August 6, 2021. <a href="https://www.npr.org/2021/08/06/1025554426/a-look-back-at-the-very-first-website-ever-launched-30-years-later" target="_blank" rel="noopener noreferrer">https://www.npr.org/2021/08/06/1025554426/a-look-back-at-the-very-first-website-ever-launched-30-years-later</a>.</li>
+      <li>“Hyperlink.” 2020. Wikipedia. March 14, 2020. <a href="https://en.wikipedia.org/wiki/Hyperlink" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Hyperlink</a>.</li>
+      <li>“Hyperlink - New World Encyclopedia.” n.d. Www.newworldencyclopedia.org. Accessed April 15, 2024. <a href="https://www.newworldencyclopedia.org/entry/Hyperlink" target="_blank" rel="noopener noreferrer">https://www.newworldencyclopedia.org/entry/Hyperlink</a>.</li>
+      <li>“Museum of Media History | MMH | Berlin.” n.d. Museum of Media History | MMH | Berlin. Accessed April 15, 2024. <a href="https://www.museumofmediahistory.com/xanadu" target="_blank" rel="noopener noreferrer">https://www.museumofmediahistory.com/xanadu</a>.</li>
+      <li>“Project Xanadu.” 2023. Wikipedia. January 28, 2023. <a href="https://en.wikipedia.org/wiki/Project_Xanadu" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Project_Xanadu</a>.</li>
+      <li>“Remember Hypercard ?” n.d. Www.youtube.com. Accessed April 15, 2024. <a href="https://youtu.be/hbIDvUqoA1E" target="_blank" rel="noopener noreferrer">https://youtu.be/hbIDvUqoA1E</a>.</li>
+      <li>“The World Wide Web Project.” 2023. Cern.ch. 2023. <a href="https://info.cern.ch/hypertext/WWW/TheProject.html" target="_blank" rel="noopener noreferrer">https://info.cern.ch/hypertext/WWW/TheProject.html</a>.</li>
+      <li>W3Schools. 2019. “HTML Reference.” W3schools.com. 2019. <a href="https://www.w3schools.com/tags/" target="_blank" rel="noopener noreferrer">https://www.w3schools.com/tags/</a>.</li>
+      <li>“AltaVista.” 2023. Web Design Museum. March 10, 2023. <a href="https://www.webdesignmuseum.org/web-design-history/altavista-1995" target="_blank" rel="noopener noreferrer">https://www.webdesignmuseum.org/web-design-history/altavista-1995</a>.</li>
+      <li>Editor. 2019. “Gopher.” Network Encyclopedia. August 28, 2019. <a href="https://networkencyclopedia.com/gopher/" target="_blank" rel="noopener noreferrer">https://networkencyclopedia.com/gopher/</a>.</li>
+      <li>“Lynx (Web Browser).” 2021. Wikipedia. February 1, 2021. <a href="https://en.wikipedia.org/wiki/Lynx_(web_browser)" target="_blank" rel="noopener noreferrer">https://en.wikipedia.org/wiki/Lynx_(web_browser)</a>.</li>
+      <li>Museum, Web Design. n.d. “Mosaic 1.0 - 1993 | Web Design Museum.” Www.webdesignmuseum.org. <a href="https://www.webdesignmuseum.org/web-design-history/mosaic-1-0-1993" target="_blank" rel="noopener noreferrer">https://www.webdesignmuseum.org/web-design-history/mosaic-1-0-1993</a>.</li>
+      <li>“The Importance of Web Standards — SitePoint.” 2002. Www.sitepoint.com. January 30, 2002. <a href="https://www.sitepoint.com/importance-web-standards/" target="_blank" rel="noopener noreferrer">https://www.sitepoint.com/importance-web-standards/</a>.</li>
+      <li>Lets Webify. 2023. “The Evolution of HTML: From Past to HTML5.” Lets Webify Ecommerce Solutions. July 21, 2023. <a href="https://letswebify.com/the-evolution-of-html-markup-language/" target="_blank" rel="noopener noreferrer">https://letswebify.com/the-evolution-of-html-markup-language/</a>.</li>
+      <li>“Yahoo Bids Farewell to Vintage Search Engine AltaVista.” n.d. PCMAG. Accessed April 15, 2024. <a href="https://www.pcmag.com/news/yahoo-bids-farewell-to-vintage-search-engine-altavista" target="_blank" rel="noopener noreferrer">https://www.pcmag.com/news/yahoo-bids-farewell-to-vintage-search-engine-altavista</a>.</li>
+      <li>“Building a Horizontal Timeline with CSS and JavaScript.” n.d. Codepen.io. <a href="https://codepen.io/tutsplus/pen/ZKpNwm/" target="_blank" rel="noopener noreferrer">https://codepen.io/tutsplus/pen/ZKpNwm/</a>.</li>
+      <li>OpenAI. 2024. “ChatGPT.” Chat.openai.com. OpenAI. 2024. <a href="https://chat.openai.com/" target="_blank" rel="noopener noreferrer">https://chat.openai.com/</a>. <br>
+        <b>Use of AI in this project:</b> I used AI primarily to help identify and correct errors in my code. I then used it to understand the use and application of AJAX and jQuery in my specific scenario and how I can implement it in my code. Finally, in CSS, to achieve the desired loading spinner effect and implement the highlighted circles and progress bar in the CV section of my project.  
+      </li>
+    </ol>
+  </div>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <span class="left">CITS5505-Project 1</span>
+      <span class="right">Amrita Manoj (23981631)</span>
+    </div>
+  </footer>
+  <!-- Linking the JS file used in this HTML page -->
+  <script src="timeline.js"></script>
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+ 
+
+</body>
+
+</html>

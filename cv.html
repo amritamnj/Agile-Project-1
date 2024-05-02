@@ -1,0 +1,169 @@
+<!-- The doctype declaration for HTML5 -->
+<!DOCTYPE html>
+<!-- Language declaration for accessibility and search engine optimization -->
+<html lang="en">
+<!-- The head section contains meta tags, links to stylesheets, and the document title -->
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS for styling and layout -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+  <!-- Bootstrap Icons for glyphicons -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+  <!-- Linking Custom CSS stylesheet for this HTML Page -->
+  <link rel="stylesheet" href="cv-style.css">
+  <link rel="stylesheet" href="styles.css">
+  <title>About the Author</title>
+</head>
+<!-- The body contains all the content and scripts -->
+<body>
+  <!-- Responsive navigation bar from Bootstrap with collapsing functionality on smaller screens -->
+  <nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link" href="index.html">Hyperlinks</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="histoy.html">History </a>
+        </li>
+        <li class="nav-item active">
+          <a class="nav-link" href="cv.html">About the Author <span class="sr-only">(current)</span></a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <!-- Main content container -->
+  <div class="main">
+    <div class="container">
+      <div class="personal-details">
+        <div class="picture">
+          <img src="./Images/Picture.jpeg" alt="Amrita">
+        </div>
+      </div>
+      <div class="summary">
+        <div class="title">
+          <p>Amrita Manoj</p>
+        </div>
+        <div class="icon-heading">
+          <i class="bi bi-person"></i>
+          <h4>About Me</h4>
+        </div>
+        <div class="about-me">
+        <p>Hello! I'm Amrita, an IT enthusiast who journeyed from the colorful chaos of India to the serene shores of Perth to pursue a Master's degree in Information Technology. </p>
+        <p>I'm an individual who blends an easy-going nature with a strategic mindset, deeply passionate about logical analysis and meticulous in attention to detail—sometimes almost too much so. My orientation towards teamwork and problem-solving defines my professional and academic endeavors.</p>
+       <p> I am targeting a career in software engineering within a team-oriented environment and will be joining the workforce in 2025. My time at the University of Western Australia has been a journey of challenges and learning, opening doors to potential career paths previously unconsidered. It has been an invaluable experience, shaping my skills and aspirations.</p>
+      </div>
+      </div>
+  </div>
+  <!-- Education and Experience Section -->
+  <div class="container2">
+      <div class="education">
+        <div class="icon-heading">
+          <i class="bi bi-mortarboard"></i>
+          <h4>Education</h4>
+        </div>
+        <ul>
+          <li>
+            <span>
+              Master of Information Technology
+            </span>
+            <small>University of Western Australia</small>
+            <small>July 2023 - Present</small>
+          </li>
+          <li>
+            <span>
+              Bachelor of Technology (Computer Science Engineering)    
+            </span>
+            <small>Rajagiri School of Engineering and Technology</small>
+            <small>August 2017 - July 2021</small>
+          </li>
+        </ul>
+      </div>
+      <div class="experience">
+        <div class="icon-heading">
+        <i class="bi bi-suitcase-lg"></i>
+        <h4>Experience</h4>
+        </div>
+      <div class="job">
+        EY GDS
+      </div>
+        <ul>
+          <li>
+            <span>Software Engineer</span>
+            <small>September 2022 - April 2023</small>
+          </li>
+          <li>
+            <span>Associate Software Engineer</span>
+            <small>September 2021 - September 2022</small>
+          </li>
+        </ul>
+      </div>
+    </div>
+    <!-- Skills and Interests section-->
+    <div class="container3">
+      <div class="skills">
+        <div class="icon-heading">
+          <i class="bi bi-code-slash"></i>
+          <h4>Skills</h4>
+        </div>
+        <ul id="skillList">
+          <li>Python</li>
+          <li>C</li>
+          <li>C++</li>
+          <li>R</li>
+          <li>MySQL</li>
+          <li>Microsoft Office</li>
+          <li>Microsoft Power BI</li>
+        </ul>
+      </div>      
+      <div class="interests">
+        <div class="icon-heading">
+        <i class="bi bi-stars"></i>
+        <h4>Interests</h4>
+      </div>
+        <div class="items">
+          <div>
+            <i class="bi bi-book-half"></i>
+            <span>Reading</span>
+          </div>
+          <div>
+            <i class="bi bi-camera2"></i>
+            <span>Photography</span>
+          </div>
+          <div>
+            <i class="bi bi-controller"></i>
+            <span>Gaming</span>
+          </div>
+          <div>
+            <i class="bi bi-speedometer2"></i>
+            <span>Formula 1</span>
+          </div>
+          <div>
+            <i class="bi bi-film"></i>
+            <span>Movies</span>
+          </div>
+          <div>
+            <i class="bi bi-boombox"></i>
+            <span>Music</span>
+          </div>
+        </div>
+      </div> 
+    </div>         
+  </div>
+  <!-- Footer Section -->
+  <footer class="footer">
+    <div class="footer-content">
+      <span class="left">CITS5505-Project 1</span>
+      <span class="right">Amrita Manoj (23981631)</span>
+    </div>
+  </footer>
+  <!-- Loading JQuery library -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <!-- Linking the JS file used in this HTML page -->
+  <script src="cv.js"></script>
+</body>
+</html>

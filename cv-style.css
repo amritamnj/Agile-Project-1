@@ -1,0 +1,257 @@
+/* Setting the background color for the entire body of the document */
+body{
+    background-color: #232946;
+}
+
+/* Styling the main container */
+.main{
+    margin: 20px;
+    color: #fffffe;
+    font-family: "Montserrat", sans-serif;
+}
+
+/* Styling the title container */
+.title{
+    font-size: 43px;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #ffe608;
+}
+
+/* Styling elements in class container */
+.container {
+  display: flex;
+  flex-direction: row; 
+  align-items: flex-start; 
+}
+
+.personal-details {
+  padding-left: 20px; 
+}
+
+.picture img {
+  width: 300px; 
+  height: auto; 
+  margin-bottom: 1rem; 
+}
+
+.summary {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding-left: 20px;
+  margin-left: 20px;
+  flex: 1;
+}
+
+.about-me p {
+  text-align: left; 
+}
+
+/* Styling for the Bootstrap icon */
+.icon-heading {
+    display: flex;
+    align-items: center;
+  }
+  
+  
+.icon-heading i {
+    font-size: 24px;
+    color: #d4939d !important; 
+    margin-right: 10px;
+  }
+  
+.icon-heading h4 {
+    margin: 0;
+    color: #bfaae4; 
+  }
+
+/* Styling elements in container2 and container3 together */
+.container2, .container3 {
+  display: flex;
+  justify-content: space-between; 
+  padding: 20px; 
+  margin: 20px 100px 20px;
+}
+  
+/* Styling elements in education and experience section */
+.education, .experience {
+  background-color: #333c67;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  margin-right: 20px;
+  flex-basis: calc(50% - 20px);
+}
+
+.experience {
+    margin-right: 0;
+}
+  
+.education ul, .experience ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  position: relative;
+  padding-left: 30px; 
+}
+
+.education li, .experience li {
+  margin-bottom: 20px;
+  position: relative;
+  padding-left: 20px; 
+}
+
+/* Use of (“ChatGPT,” n.d.) */
+.education li::before, .experience li::before {
+  content: '';
+  position: absolute;
+  left: -30px; 
+  height: 10px;
+  width: 10px;
+  background-color: white;
+  border: 2px solid #ccc; 
+  border-radius: 50%;
+  z-index: 2;
+  transition: background-color 0.3s ease, width 0.3s ease, height 0.3s ease, transform 0.3s ease;
+}
+
+.education li:hover::before, .experience li:hover::before {
+  background-color: #ffe608; 
+  width: 15px; 
+  height: 15px; 
+  transform: translateX(-2.5px) translateY(-2.5px); 
+}
+
+.education ul::before, .experience ul::before {
+  content: '';
+  position: absolute;
+  left: 4px; 
+  top: 0;
+  height: 100%;
+  width: 2px;
+  background-color: #ccc;
+  z-index: 1;
+}
+/* End of use for (“ChatGPT,” n.d.) */
+
+.education span, .experience span {
+  display: block;
+  font-weight: bold;
+  color: white;
+  transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+.education span:hover, .experience span:hover {
+  font-size: 17px;
+  color: #ffe608;;
+}
+
+.education small, .experience small {
+  display: block;
+  color: #fa9908;
+}
+
+.job{
+  font-weight: bold;
+}
+
+.experience {
+  margin-right: 0;
+}
+  
+/* Styling elements in skills and interests section */
+.interests {
+    margin-bottom: 20px;
+  }
+  
+.interests h4 {
+    margin: 0;
+  }
+  
+.interests .items {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+.interests .items div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-basis: calc(50% - 20px);
+  }
+  
+.interests .items i {
+    font-size: 50px;
+    transition: transform 0.3s ease, color 0.3s ease;
+  }
+  
+  
+.interests .items i:hover {
+  transform: scale(1.1); 
+  color: #ffe608; 
+}
+
+.skills, .interests {
+    background-color: #333c67; 
+    border-radius: 5px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    padding: 20px;
+    margin: 10px 0; 
+    width: 48%;
+}
+
+/* Use of (“ChatGPT,” n.d.) */
+.progress-bar-container {
+  background-color: #ddd; 
+  border-radius: 5px; 
+  height: 10px; 
+  overflow: hidden; 
+  margin-top: 5px;
+}
+
+.progress-bar {
+  background-color: #e28437; 
+  transition: width 0.3s ease; 
+  height: 10px;
+  
+}
+
+.progress-bar-text {
+  position: absolute; 
+  left: 50%; 
+  top: 50%; 
+  transform: translate(-50%, -50%); 
+  color: #fff;
+  pointer-events: none; 
+  opacity: 0; 
+  transition: opacity 0.3s ease; 
+  height: 10px;
+}
+/* End of use for (“ChatGPT,” n.d.) */
+
+.progress-bar-container:hover .progress-bar {
+  background-color: #ffc107; 
+  height: 15px;
+}
+
+.progress-bar-container:hover .progress-bar-text {
+  opacity: 1; 
+  background-color: #ffc107;
+  height: 15px;
+}
+
+#skillList{
+  list-style: none;
+  margin-right: 30px;
+}
+
+#skillList li{
+  padding-bottom: 10px;
+  transition: font-size 0.3s ease, color 0.3s ease;
+}
+
+#skillList li:hover{
+  color: #ffe608;
+  font-size: 17px;
+}
