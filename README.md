@@ -15,7 +15,7 @@ This project includes various components showcasing the implementation of agile 
 
 ## 🚀 Getting Started
 To view the project locally:
-1. Clone the repository:
+Clone the repository:
    ```bash
    git clone https://github.com/amritamnj/Agile-Project-1.git
-```
+
