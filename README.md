@@ -1,4 +1,4 @@
-# Agile Project 1
+# All About Hyperlinks
 
 A web-based project created as part of Agile Web Development coursework. This project demonstrates core web development skills using HTML, CSS, and JavaScript.
 
